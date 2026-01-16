@@ -1,3 +1,6 @@
+![](https://i.imgur.com/hUaZ0aG.png)
+
+
 Esse um **conjunto de prompts profissionais, focados em engenharia, que vão ajudar a traduzir qualquer *workflow n8n*** (modelo visual low-code) **em um sistema modular, entity-centric, com arquitetura, tipagem e conceitos de dev bem definidos**. 
 
 
