@@ -51,7 +51,7 @@ Liste:
 
 Workflow n8n:  
 {{workflow_n8n}}
-
+```
 
 
 ## 🎯 Prompt Principal — **Traduzir n8n → Sistema Entity-Centric Modular**
@@ -77,11 +77,11 @@ Entrada de workflow n8n (JSON ou descrição):
 {{workflow_n8n}}
 ```
 
-**Por que isso é forte**:
+**Para que isso?**:
 
 * Converte a definição visual de *nodes* do n8n em **entidades e módulos** como em um sistema distribuído real.
 * Força **tipagem e contratos**, algo que workflows n8n por si não têm (eles lidam com JSON genérico).
-* Gera uma visão que você pode transformar em código real (p.ex., TypeScript + Domain-Driven Design). ([n8n Docs][2])
+* Gera uma visão que você pode transformar em código real (p.ex., TypeScript + Domain-Driven Design).
 
 ---
 
@@ -99,7 +99,7 @@ Entrada n8n JSON:
 {{workflow_n8n}}
 ```
 
-Esse prompt é ótimo para **refatorar automações low-code em arquitetura consciente**, com separação de responsabilidades. ([DIO][3])
+Esse prompt é ótimo para **refatorar automações low-code em arquitetura consciente**, com separação de responsabilidades.
 
 ---
 
@@ -117,7 +117,7 @@ Workflow n8n:
 {{workflow_n8n}}
 ```
 
-Esse modelo transforma a noção “o n8n passa JSON de item a item” em **estrutura tipada e validada**, essencial para sistemas grandes. ([n8n Docs][2])
+Esse modelo transforma a noção “o n8n passa JSON de item a item” em **estrutura tipada e validada**, essencial para sistemas grandes.
 
 ---
 
@@ -141,7 +141,7 @@ Workflow n8n:
 {{workflow_n8n}}
 ```
 
-Use isso quando quiser migrar de n8n → **arquitetura distribuída event-driven real**. ([DIO][3])
+Use isso quando quiser migrar de n8n → **arquitetura distribuída event-driven real**. 
 
 ---
 
@@ -187,13 +187,13 @@ Esse tipo de prompt ajuda a **elevar o raciocínio além da conversão mecânica
 * Sempre forneça ao LLM **o JSON completo do workflow** (não só descrição).
 * Se possível, use ferramentas de *prompt chaining* para dividir a tarefa em etapas (análise → tipo/schema → arquitetura → código).
 * Valide a saída gerada com um conjunto de testes automatizados ou exemplos de payloads.
-* Explique o resultado em termos de **entidades, agregados, eventos, handlers**, não apenas nodes. ([n8n Docs][2])
+* Explique o resultado em termos de **entidades, agregados, eventos, handlers**, não apenas nodes.
 
 ---
 
 ## 🧠 Porque isso funciona
 
-O n8n é uma plataforma de automação que representa workflows como uma sequência de nós que processam arrays de objetos JSON. ([n8n Docs][2])
+O n8n é uma plataforma de automação que representa workflows como uma sequência de nós que processam arrays de objetos JSON.
 Mas **sistemas reais não vivem apenas de JSON arbitrário** — eles têm:
 
 * **entidades** com identidade e invariantes,
@@ -201,10 +201,11 @@ Mas **sistemas reais não vivem apenas de JSON arbitrário** — eles têm:
 * **módulos com responsabilidades claras**,
 * **eventos/controladores** que orquestram lógica.
 
-Os prompts acima **forçam a IA a mapear essa transição de visão visual low-code → arquitetura software real**, com tipagem, módulos e estrutura robusta. Essa é a sacada que separa um *dev que só copia JSON* de um *dev que entende a lógica por trás*. ([DIO][3])
+Os prompts acima **forçam a IA a mapear essa transição de visão visual low-code → arquitetura software real**, com tipagem, módulos e estrutura robusta. Essa é a sacada que separa um *dev que só copia JSON* de um *dev que entende a lógica por trás*. 
 
+E tem esse malindrinho para quem quer entender acima do Vibe coding, o Cogful coding
 
-
+```txt
 Você é um engenheiro de software sênior. Converta o workflow n8n descrito abaixo em **arquitetura modular entity-centric** com:
  • representação de entidades e agregados,
  • contratos (interfaces/types) para cada módulo,
@@ -223,3 +224,4 @@ Estruture a saída como:
 
 Entrada de workflow n8n (JSON ou descrição):  
 {{workflow_n8n}}
+```
