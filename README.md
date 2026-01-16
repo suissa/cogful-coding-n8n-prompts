@@ -1,6 +1,7 @@
-Aqui está um **conjunto de prompts profissionais — focados em engenharia — que traduzem qualquer *workflow n8n*** (modelo visual low-code) **em um sistema modular, entity-centric, com arquitetura, tipagem e conceitos de dev bem definidos**. Eles foram formulados para funcionar tanto em LLMs avançados como em pipelines *AI-assisted — ou em integrações diretas via HTTP/AI nodes no n8n.*
+Esse um **conjunto de prompts profissionais, focados em engenharia, que vão ajudar a traduzir qualquer *workflow n8n*** (modelo visual low-code) **em um sistema modular, entity-centric, com arquitetura, tipagem e conceitos de dev bem definidos**. 
 
-Esses prompts dizem respeito à arquitetura do n8n (nós conectados representando fluxo de dados em JSON) e te empurram em direção a uma forma *entity-centric*, interpretável como código, com separação de responsabilidades. ([Conversion][1])
+
+
 
 🧠 Prompt de Análise Arquitetural
 ```txt
@@ -15,6 +16,7 @@ Entrada n8n JSON:
 {{workflow_n8n}}
 ```
 
+
 🛠 Prompt para Definir Esquemas de Dados/Tipos
 ```txt
 A partir deste workflow n8n, gere os **schemas de dados** que representam todos os itens passados de node a node, com:
@@ -27,6 +29,29 @@ A partir deste workflow n8n, gere os **schemas de dados** que representam todos 
 Workflow n8n:  
 {{workflow_n8n}}
 ```
+
+
+🔁 Prompt para Extrair Fluxos de Eventos
+
+**Meus sistemas são praticamente tudo eventos**
+
+```txt
+Dado o JSON do workflow n8n, interprete-o como um **Event-Driven System**:
+ • identifique eventos de entrada (triggers),
+ • eventos intermediários (transformações),
+ • efeitos laterais (outputs/side-effects),
+ • error flows e compensações.
+
+Liste:
+1) tópicos/event names,
+2) payload shapes,
+3) handlers/consumers,
+4) possíveis filas (Kafka/Rabbit etc),
+5) idempotência e error handling.
+
+Workflow n8n:  
+{{workflow_n8n}}
+
 
 
 ## 🎯 Prompt Principal — **Traduzir n8n → Sistema Entity-Centric Modular**
