@@ -15,6 +15,20 @@ Entrada n8n JSON:
 {{workflow_n8n}}
 ```
 
+🛠 Prompt para Definir Esquemas de Dados/Tipos
+```txt
+A partir deste workflow n8n, gere os **schemas de dados** que representam todos os itens passados de node a node, com:
+ • tipos explícitos (TypeScript ou JSON Schema),
+ • campos obrigatórios/opcionais,
+ • transformações entre formatos,
+ • validações (ex.: email, datas, IDs),
+ • exemplos de payloads antes/depois de cada transformação.
+
+Workflow n8n:  
+{{workflow_n8n}}
+```
+
+
 ## 🎯 Prompt Principal — **Traduzir n8n → Sistema Entity-Centric Modular**
 
 ```
